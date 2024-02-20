@@ -17,3 +17,14 @@ def quickSort(array, low, high):
         pi = partition(array, low, high)
         quickSort(array, low, pi - 1)
         quickSort(array, pi + 1, high)
+
+data = [1, 7, 4, 1, 10, 9, -2]
+print("Unsorted Array")
+print(data)
+ 
+size = len(data)
+ 
+quickSort(data, 0, size - 1)
+ 
+print('Sorted Array in Ascending Order:')
+print(data)
